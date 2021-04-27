@@ -1,0 +1,13 @@
+.form-box{
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+}
+.form-input{
+  display: flex;
+  max-width: 65%;
+}
+.form-btn{
+  margin-left: 15px;
+}

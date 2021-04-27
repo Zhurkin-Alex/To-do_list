@@ -1,0 +1,36 @@
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 35%;
+  
+}
+.todo-check{
+  /* margin-right: 15px;   */
+  min-width: 100px;
+}
+.form-checkbox{
+  margin-right: 10px;
+}
+.form-btn_delete{
+  margin-right: 5px;
+}
+.done{
+  color: green;
+  text-decoration: line-through;
+}
+.unDone {
+  color: red;
+}
+.edit-box{
+  display: flex;
+}
+.edit-form{
+  margin-right: 10px;
+}
+.inpurt-form{
+  margin-right: 10px;
+}
+.btn-update{
+  display: flex;
+}
