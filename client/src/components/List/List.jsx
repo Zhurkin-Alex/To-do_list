@@ -1,6 +1,6 @@
 import todoContect from '../../utils/contexts/todoContext'
 import {useContext} from 'react'
-import Card from '../Card/Card'
+import Card from '../Card/Card.jsx'
 
 function List(props) {
   const {list} = useContext(todoContect)

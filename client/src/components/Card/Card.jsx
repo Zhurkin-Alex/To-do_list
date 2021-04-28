@@ -85,7 +85,8 @@ function Card({todo}) {
       </div>
       <div className="btn-update">
         <button className="btn btn-primary form-btn_delete" onClick={deleteHandler}>Delete</button>
-        <button className="btn btn-primary" onClick={updateHandler}>Update</button>
+        <span className="done"> Выполнено</span> 
+        {/* <button className="btn btn-primary" onClick={updateHandler}>Update</button> */}
      </div>
     </li>)
     }
@@ -97,7 +98,8 @@ function Card({todo}) {
           <input className="inpurt-form" name="title" defaultValue={todo.title} />
           <button className="btn btn-primary" >Save</button>
         </form>
-      </span>      
+      </span>  
+         
       <button className="btn btn-primary" onClick={deleteHandler}>Delete</button>
     </li>
       )
