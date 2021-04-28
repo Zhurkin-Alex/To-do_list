@@ -10,14 +10,16 @@ const reducer = (state, action)=>{
       return [...state, action.payload];
     case 'DELETE':
     return state.filter((el)=>el._id !== action.payload);
-    case 'UPDETE':    
+    case 'CHECK':    
       // return checkStatus(state, action);
       return [...state].map(el=>{
         return el._id == action.payload.id ? {...el, isDone: !el.isDone} :el
       })
     case 'EDIT':    
-    return editTitle(state, action);
-
+    // return editTitle(state, action);
+    return [...state].map(el=>{
+      return el._id == action.payload.id ? {...el, title: action.payload.title } :el
+    })
 
     default:
       break;

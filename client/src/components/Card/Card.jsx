@@ -33,7 +33,7 @@ function Card({todo}) {
      })
    })
    .then(res=>res.json())
-   .then(data=>dispatch({type:"UPDETE", payload:data}))
+   .then(data=>dispatch({type:"CHECK", payload:data}))
     // .then(data=>console.log("data", data))
  }
  const[edit,setEdit]= useState(false)
